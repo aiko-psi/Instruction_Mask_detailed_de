@@ -6,6 +6,7 @@
 \usepackage{graphicx}         % Einbindung von Grafiken
 \usepackage{wrapfig}			% Grafiken im Text
 \usepackage{subcaption}         % Für Subgrafiken
+\usepackage{pdfpages}
 \clubpenalty = 10000           % Keine "Schusterjungen"
 \widowpenalty = 10000          % Keine "Hurenkinder"
 
@@ -201,7 +202,7 @@ Jetzt folgt einer der wichtigsten Schritte, die Verbindung von Innenstoff und Au
         \label{OuterSeam2}
     \end{subfigure}
     \caption{Außennaht}
-    \label{OuterSeam}
+    \label{OuterSeamFirst}
 \end{figure}
 
 \begin{figure}[ht]
@@ -232,7 +233,7 @@ Jetzt folgt einer der wichtigsten Schritte, die Verbindung von Innenstoff und Au
         \label{OuterSeam6}
     \end{subfigure}
     \caption{Außennaht}
-    \label{OuterSeam}
+    \label{OuterSeamSecond}
 \end{figure}
 
 
@@ -276,7 +277,7 @@ Im nächsten Schritt wird die Maske gewendet, also von innen nach außen gedreht
         \caption{Kanten nach außen stülpen}
         \label{Turning2}
     \end{subfigure}
-    \label{Turning}
+    \label{TurningFirst}
 \end{figure}
     
 
@@ -308,7 +309,7 @@ Im nächsten Schritt wird die Maske gewendet, also von innen nach außen gedreht
         \label{Turning6}
     \end{subfigure}
     \caption{Wenden}
-    \label{Turning}
+    \label{TurningSecond}
 \end{figure}
 
 \section{Nasen-Befestigungen}
@@ -513,4 +514,6 @@ Der Mund-Nasen-Schutz ist fertig! Er kann jetzt getragen und eingesetzt werden.
     \label{Ready}
 \end{figure}
 
+\clearpage
+\includepdf[pages=-]{SewingPattern.pdf}
 \end{document}
